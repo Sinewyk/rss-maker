@@ -1,12 +1,10 @@
-'use strict';
+const xray = require('x-ray');
 
-var xray = require('x-ray');
-
-module.exports = function() {
-    return xray('http://www.mangahere.co/latest/')
-        .select([{
-            $root: 'dd',
-            title: 'a[title]',
-            link: 'a[href]'
-        }]);
-};
+module.exports = () =>
+  xray('http://www.mangahere.co/latest/').select([
+    {
+      $root: 'dd',
+      title: 'a[title]',
+      link: 'a[href]'
+    }
+  ]);
