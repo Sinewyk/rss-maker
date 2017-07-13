@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "make an rss feed out of something",
   "main": "server.js",
-  "engines": {
-    "iojs": "1.6.x"
-  },
   "scripts": {
     "test": "npm test"
   },
@@ -13,11 +10,7 @@
     "type": "git",
     "url": "https://github.com/Sinewyk/rss-maker"
   },
-  "keywords": [
-    "rss",
-    "feed",
-    "node"
-  ],
+  "keywords": ["rss", "feed", "node"],
   "author": "Serge \"Sinewyk\" Havas",
   "license": "WTFPL",
   "bugs": {
