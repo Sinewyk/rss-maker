@@ -1,10 +1,4 @@
-const xray = require('x-ray');
+const x = require('x-ray')();
 
 module.exports = () =>
-  xray('http://www.mangahere.co/latest/').select([
-    {
-      $root: 'dd',
-      title: 'a[title]',
-      link: 'a[href]'
-    }
-  ]);
+  x('http://www.mangahere.co/latest/', 'dd', [{ title: 'a', link: 'a@href' }]);

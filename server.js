@@ -30,7 +30,7 @@ const server = require('http').createServer((req, res) => {
     ttl: '5'
   });
 
-  scrapper().run((err, data) => {
+  scrapper()((err, data) => {
     if (err) {
       res.statusCode = 500;
       return res.end();
